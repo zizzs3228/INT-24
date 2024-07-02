@@ -1,5 +1,3 @@
-
-
 class Node_Worker():
     def __init__(self) -> None:
         self.dymanic_source_code_exec = False
