@@ -44,4 +44,4 @@ train.py
 
 ![image](https://github.com/zizzs3228/INT-24/assets/73750173/6fc285b0-e820-4662-8ec1-2f8042d729ff)
 
-DONapi на less, mongoose и mongodb (пакетах, которые не участвовали в обучении модели)
+DONapi на less, mongoose и mongodb (пакетах, которые не участвовали в обучении модели даже в тестовом датасете)
