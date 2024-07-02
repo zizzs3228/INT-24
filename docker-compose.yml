@@ -1,0 +1,12 @@
+services:
+  node:
+    build: ./DONapi/js_ast_builder
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - /usr/src/app/node_modules
+  python_ast:
+    build: .
+    ports:
+      - "7860:7860"
+    

@@ -1,0 +1,6 @@
+yara-python
+requests
+pandas
+numpy
+joblib
+scikit-learn
