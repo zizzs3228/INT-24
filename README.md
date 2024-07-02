@@ -17,6 +17,10 @@ docker compose up --build -d
 ```
 cd DONapi
 ```
+создать виртуальное окружение и активировать его
+```
+python3 -m venv venv && source venv/bin/activate
+```
 поставить зависимости
 ```
 pip install -r requirements.txt
