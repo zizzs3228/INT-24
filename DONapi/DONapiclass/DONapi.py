@@ -124,13 +124,13 @@ class DONapi():
         
         ip_regex = r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
         found = re.findall(ip_regex, to_match)
+        self.features['UF10'] = 0
         if found:
             for ip in found:
                 if not ip.startswith('192.168') and not ip.startswith('10.'):
                     if not ip.startswith('172.16') and not ip.startswith('100.64'):
                         self.features['UF10'] = 1
-        else:
-            self.features['UF10'] = 0
+            
             
         
         entropy = calculate_entropy(longest_subdomain)
