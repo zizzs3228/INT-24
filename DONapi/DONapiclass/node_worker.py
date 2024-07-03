@@ -8,9 +8,8 @@ class Node_Worker():
         self.shells_to_check = ('bash', 'chmod', 'chown', 'chgrp', 'bin', '777','755','/bin/sh')
         self.system_commands_to_check = ('wget','curl','nc','ssh','scp','cat','echo','chmod','iptables','pkill','ps aux')
         self.SPSI_features = {}
-        for i in range(1, 12):
+        for i in range(1, 13):
             self.SPSI_features[f'BF{i}'] = 0
-        self.SPSI_features['BF12'] = 0
     
     def visit_init(self, node:dict|list[dict]):
         if isinstance(node, dict):
